@@ -1,0 +1,9 @@
+.App {
+  color:#6b6e73;
+}
+
+.main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

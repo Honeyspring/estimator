@@ -1,0 +1,24 @@
+
+footer {
+
+   color: #009688;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.footer a {
+
+  text-align: center;
+  color: #009688;
+  font-size: 1.25rem;
+  text-decoration: none;
+
+}
+
+
+/* Change the color of links on hover */
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
