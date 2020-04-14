@@ -1,6 +1,5 @@
 import React ,{Component}from 'react';
 import './App.css';
-//import covid19ImpactEstimator from './components/estimator';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Table from './components/Table/Table';
