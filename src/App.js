@@ -95,7 +95,7 @@ this.setState({
   <div className='App'>
   <Header />
     <div className="main">
-        <Form loadData={this.loadData}/>
+        <Form loadData={this.loadData} inputData={this.state.inputData}/>
          <Table  Impact={this.state.Impact} severeImpact={this.state.severeImpact}/>
    </div>
     <Footer />

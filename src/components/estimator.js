@@ -4,7 +4,7 @@ const covid19ImpactEstimator = (data) => {
   let factor;
   const days = data.periodType;
 
-
+   
   // converts to days
   if (days === 'days') {
     data.timeToElapse *= 1;
@@ -24,9 +24,9 @@ const covid19ImpactEstimator = (data) => {
   - impact.severeCasesByRequestedTime);
   impact.casesForICUByRequestedTime = Math.trunc(impact.infectionsByRequestedTime * 0.05);
   impact.casesForVentilatorsByRequestedTime = Math.trunc(impact.infectionsByRequestedTime * 0.02);
-  /*impact.dollarsInFlight = Math.trunc((impact.infectionsByRequestedTime
-    * data.region.avgDailyIncomePopulation * data.region.avgDailyIncomeInUSD) / data.timeToElapse);*/
-
+ /*impact.dollarsInFlight = Math.trunc((impact.infectionsByRequestedTime
+    * data.region.avgDailyIncomePopulation * data.region.avgDailyIncomeInUSD) / data.timeToElapse);
+*/
   severeImpact.currentlyInfected = data.reportedCases * 50;
   severeImpact.infectionsByRequestedTime = severeImpact.currentlyInfected * (factor);
   severeImpact.severeCasesByRequestedTime = Math.trunc(severeImpact.infectionsByRequestedTime
@@ -38,9 +38,9 @@ const covid19ImpactEstimator = (data) => {
   severeImpact.casesForVentilatorsByRequestedTime = Math.trunc(
     severeImpact.infectionsByRequestedTime * 0.02
   );
-  /*severeImpact.dollarsInFlight = Math.trunc((severeImpact.infectionsByRequestedTime
-    * data.region.avgDailyIncomePopulation * data.region.avgDailyIncomeInUSD) / data.timeToElapse);
-*/
+ /* severeImpact.dollarsInFlight = Math.trunc((severeImpact.infectionsByRequestedTime
+    * data.region.avgDailyIncomePopulation * data.region.avgDailyIncomeInUSD) / data.timeToElapse);*/
+
   return {
     data,
     impact,
