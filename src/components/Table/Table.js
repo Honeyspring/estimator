@@ -2,7 +2,7 @@ import React from 'react';
 import './Table.css';
 
 
-const Table=({Impact,SevereImpact})=>{
+const Table=({Impact,SevereImpact,Disclaimer,region})=>{
    
     return(
         <article className="ma4 br3 ba dark-gray b--black-10 mv5 w-100 w-50-m w-75-l mw shadow-5 center">
@@ -11,6 +11,7 @@ const Table=({Impact,SevereImpact})=>{
            <div className=" measure centre" style={{overflowX:'auto'}}>
           <table >                                   
           <tbody >
+   <p className="fw5 lh-copy f5 blue"  value="disclaimer"><i className="fa ">{region}</i></p>
         <tr>
       <th style={{width:'50%'}}>Features</th>
       <th>Impact</th>    
@@ -52,11 +53,12 @@ const Table=({Impact,SevereImpact})=>{
       <td className="fw6 lh-copy f6"  value="impact-dollarsInFlight"><i className="fa fa-check">${Impact.dollarsInFlight}</i></td>
       <td className="fw6 lh-copy f6"  value="SevereImpact-dollarsInFlight"><i className="fa fa-remove">${SevereImpact.dollarsInFlight}</i></td>
     </tr>
+    
     </tbody>
-
    
   </table>
  </div>
+  <p className="fw5 lh-copy f5 blue"  value="disclaimer"><i className="fa ">***{Disclaimer}***</i></p>
     </main>
      </article> 
          );

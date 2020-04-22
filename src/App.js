@@ -22,6 +22,7 @@ class App extends Component{
       FormTotalHospitalBeds :"",
       TableImpact:{},
       TableSevereImpact:{},
+      Disclaimer:"",
       FormError:{
       FormName : "",
       FormAvgAge :"",
@@ -37,7 +38,7 @@ class App extends Component{
 }
 
 onNameChange=(event)=>{
-        this.setState({ FormName:event.target.value});
+        this.setState({ FormName:event.target.value.replace(/[^A-Za-z]/ig, '')});
        
         
     }
@@ -305,6 +306,7 @@ const severeImpactEstimator=(data)=>{
      this.setState({
       TableImpact:Impact,
       TableSevereImpact:SevereImpact,
+      Disclaimer:"This is  a novelty COVID-19 infections estimate resulting from research according to Harvard Medical School / Massachusetts General Hospital and  Calculations are based on data received and is not definite,do note that *** Do note that the current infections doubles every 3 days**",
       FormError:{
       FormName : "",
       FormAvgAge :"",
@@ -319,9 +321,7 @@ const severeImpactEstimator=(data)=>{
           
   }) 
 
-    console.log(Impact,SevereImpact)
-      console.log( inputData);
-
+    
  
     }
      
@@ -346,7 +346,7 @@ const severeImpactEstimator=(data)=>{
          onAvgDailyIncomeInUSDChange={this.onAvgDailyIncomeInUSDChange} onAvgDailyIncomePopulationChange={this.onAvgDailyIncomePopulationChange}
         onPeriodTypeSelect={this.onPeriodTypeSelect}  onTimeToElapseChange={this.onTimeToElapseChange} onReportedCasesChange={this.onReportedCasesChange}
             onTotalHospitalBedsChange={this.onTotalHospitalBedsChange} onPopulationChange={this.onPopulationChange} FormError={this.state.FormError}/>
-       <Table Impact={this.state.TableImpact} SevereImpact={this.state.TableSevereImpact}/>
+       <Table region={this.state.FormName} Impact={this.state.TableImpact} SevereImpact={this.state.TableSevereImpact} Disclaimer={this.state.Disclaimer}/>
    </div>
     <Footer />
   </div>
