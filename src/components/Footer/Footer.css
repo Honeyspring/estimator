@@ -2,7 +2,7 @@
 footer {
 
    color: #009688;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -21,4 +21,8 @@ footer {
 .footer a:hover {
   background-color: #ddd;
   color: black;
+}
+.icons {
+	max-width: 2%;
+	padding:16px;
 }

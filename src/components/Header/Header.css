@@ -21,7 +21,15 @@ nav{
   
   
 }
-
+.logo{
+  float: left;
+  margin-left: 16px;
+  
+}
+.slog{
+  float: right;
+  margin-right: 16px;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;

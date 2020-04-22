@@ -11,8 +11,18 @@ label{
     color:#6b6e73;
 }
 
-
-
+.FormError{
+    display: block;
+    color:red;    
+}
+.error{
+    border: none;
+    border-bottom:1px solid red;  
+    
+}
+.red{
+    color: red;
+}
 .btn{
     background-color: rgb(63, 150, 117);
     width:100%;
@@ -90,21 +100,14 @@ label{
 
 
 
-.hover-white:hover {
-    color: #fff;
+.hover-green:hover {
+    color: rgb(63, 150, 117);
+
 }
 
-.hover-white:focus {
-    background-color: rgb(63, 150, 117);
-}
 
-.hover-bg-black:hover {
-    background-color: rgb(63, 150, 117);
-}
 
-.hover-bg-black:focus {
-    background-color: rgb(63, 150, 117);
-}
+
 
 .pa0 {
     padding: 0;

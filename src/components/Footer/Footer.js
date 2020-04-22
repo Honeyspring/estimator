@@ -1,18 +1,25 @@
 import React from 'react';
 import './Footer.css';
+import linkedin from './icons/linkedin.svg';
+import facebook from './icons/facebook.svg';
+import gmail from './icons/gmail.svg';
+import mobile from './icons/mobile.svg';
+import github from './icons/github.svg';
+import whatsapp from './icons/whatsapp.svg';
 
 const Footer = () => {
     
       return (
         <footer className="footer" id="footer">
 
-            <p className=' link dim  pa3 '>&copy;  Honeyspring</p>
-            <a href="https://www.facebook.com/ogunsola.oyindamola"><i className="fa fa-facebook-official"></i></a>
-            <a href="mailto:ogunsola.irene@gmail.com"><i className="fa fa-email"></i></a>
-            <a href="https://wa.me/+2348092916689"><i className="fa fa-whatsapp"></i></a>
-            <a href="https://github.com/Honeyspring"><i className="fa fa-github"></i></a>
-            <a href="tel:+2348092916689"><i className="fa fa-phone"></i></a>
-            <a href="https://linkedin.com/in/ogunsola-oyindamola"><i className="fa fa-linkedin"></i></a>
+           
+             <a className=' dim' href="https://www.facebook.com/ogunsola.oyindamola"><img className="icons" src={facebook} alt='facebook'/></a>
+            <a className=' dim' href="mailto:ogunsola.irene@gmail.com"><img className="icons" src={gmail} alt='gmail'/></a>
+            <a className=' dim' href="https://wa.me/+2348092916689"><img className="icons" src={whatsapp} alt='whatsapp'/></a>
+            <a className=' dim' href="https://github.com/Honeyspring"><img  className="icons" src={github} alt='github'/></a>
+            <a className=' dim' href="tel:+2348092916689"><img  className="icons" src={mobile} alt='mobile'/></a>
+            <a className=' dim' href="https://linkedin.com/in/ogunsola-oyindamola"><img className="icons" src={linkedin} alt='linkedin'/></a>
+             <p className=' link dim  pa3 '>&copy;  {new Date().getFullYear()} Honeyspring</p>
         
         </footer>
       );
