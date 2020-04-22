@@ -18,7 +18,7 @@ label{
 .error{
     border: none;
     border-bottom:1px solid red;  
-    
+
 }
 .red{
     color: red;
@@ -90,9 +90,6 @@ label{
     width: 100%;
 }
 
-.black-80 {
-    color: rgb(9, 179, 114);
-}
 
 .black {
     color: rgb(8, 148, 101);
