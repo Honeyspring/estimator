@@ -19,8 +19,8 @@ const Table=({Impact,SevereImpact,Disclaimer,region})=>{
     </tr>
     <tr>
       <td>Currently Infected</td>
-      <td className="fw6 lh-copy f6" value="impact-currentlyInfected"><i className="fa fa-remove">{Impact.currentlyInfected}</i></td> 
-      <td className="fw6 lh-copy f6"  value="SevereImpact-currentlyInfected"><i className="fa fa-check">{SevereImpact.currentlyInfected}</i></td>
+      <td className="fw6 lh-copy f6" value="impact-currentlyInfected"><i className="fa fa-check">{Impact.currentlyInfected}</i></td> 
+      <td className="fw6 lh-copy f6"  value="SevereImpact-currentlyInfected"><i className="fa fa-remove">{SevereImpact.currentlyInfected}</i></td>
 
     </tr>
     <tr>
