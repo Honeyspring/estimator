@@ -100,15 +100,15 @@ onFormSubmit = () => {
   if (days === 'Daily') {
     inputData.timeToElapse *= 1;
     factor = 2 ** Math.trunc((inputData.timeToElapse / 3));
-    console.log(factor)
+  
   } else if (days === 'Weekly') {
     inputData.timeToElapse *= 7;
     factor = 2 ** Math.trunc((inputData.timeToElapse / 3));
-    console.log(factor)
+   
   } else if (days === 'Monthly'){
     inputData.timeToElapse *= 30;
     factor = 2 ** Math.trunc((inputData.timeToElapse / 3));
-    console.log(factor);
+ 
   }
    
  const ImpactEstimator =(data)=>{
